@@ -98,8 +98,7 @@ const SpecialityMaster = () => {
       status: data.status,
     };
   });
-  console.log(tabledata);
- 
+  console.log("table data => ",tabledata);
   useEffect(() => {
     fetchData();
   }, [])
@@ -121,7 +120,15 @@ const SpecialityMaster = () => {
             </div>
           </div>
         </form>
-        <FormTable data={tabledata} columns={tablecolumn} title="Primary Speciality List" />
+              {department.length === 0 ? (
+                  <p>Loading data...</p>
+              ) : (
+                  <> {/* Use a fragment to avoid unnecessary wrapper */}
+                      <FormTable data={tabledata} columns={tablecolumn} title="Primary Speciality List" />
+                      {tabledata.length === 0 && <p>No data to display.</p>} {/* Show message for empty data */}
+                  </>
+              )}
+        
       </Card>
       <Card title="Sub Speciality" cardvalue={CardVal}>
         <div className="form-row">
@@ -136,7 +143,14 @@ const SpecialityMaster = () => {
             <CustomToggleButton label="Is Clinical" onSendData={(toggleState) => setFormData({ ...formData, clinical: toggleState ? true : false, })} />
           </div>
         </div>
-        <FormTable data={tabledata} columns={tablecolumn} title="Sub Speciality List" />
+              {department.length === 0 ? (
+                  <p>Loading data...</p>
+              ) : (
+                  <> {/* Use a fragment to avoid unnecessary wrapper */}
+                      <FormTable data={tabledata} columns={tablecolumn} title="Primary Speciality List" />
+                      {tabledata.length === 0 && <p>No data to display.</p>} {/* Show message for empty data */}
+                  </>
+              )}
       </Card>
     </div>
   );
