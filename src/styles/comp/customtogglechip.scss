@@ -1,0 +1,37 @@
+.custom-toggle-chip {
+    border: 1px solid var(--y1);
+    padding: 0px calc(var(--unit) * 2);
+    height: calc(var(--unit) * 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background: var(--white);
+    gap: calc(var(--unit) / 2);
+    cursor: pointer;
+    transition: var(--trans-q);
+    .check 
+    {
+        opacity: 0;  
+        transition: var(--trans-q);
+    }
+    p 
+    {
+        transform: translateX(calc(var(--unit) * -1));
+        transition: var(--trans-q);
+    }
+
+    &.active 
+    {
+        background: var(--y5);
+        .check 
+        {
+            opacity: 1;
+        }
+
+        p 
+        {
+            transform: translateX(calc(var(--unit) * 0));
+        }
+    }
+}

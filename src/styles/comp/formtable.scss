@@ -1,0 +1,101 @@
+.formtable-parent {
+    width: 100%;
+    height: fit-content;
+    // background: #000;
+    border-top: 1px solid var(--g5);
+    margin-top: calc(var(--unit) / 2);
+    padding-top: calc(var(--unit) / 2);
+
+    .formdata-table {
+        thead {
+            background: var(--y4);
+            height: calc(var(--unit) * 4);
+            overflow: hidden;
+            border-radius: var(--unit) !important;
+
+            th:not(:last-child) {
+
+                border-right: 1px solid var(--y2);
+            }
+
+        }
+
+        .table-header {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin-bottom: calc(var(--unit) * -1);
+
+            &>* {
+                height: calc(var(--unit) * 4);
+            }
+
+            h2 
+            {
+                padding-left: calc(var(--unit) / 3);
+            }
+
+            .search-bar 
+            {
+                border: 1px solid var(--g4);
+                box-shadow: none; 
+                &:hover,&:focus
+                {
+                    border: 1px solid var(--y2);
+                }
+                border-radius: calc(var(--unit) / 3);
+            }
+        }
+
+    }
+}
+
+
+
+.formdata-table-header {
+    background-color: #f5f5f5; // Light background color for header
+  }
+  
+  .formdata-table-header-cell {
+    border-right: 1px solid #e8e8e8; // Light grey right border for separation
+    padding: 10px; // Padding for spacing
+  }
+  
+  .formdata-table-header-cell:last-child {
+    border-right: none; // Remove the right border for the last header cell
+  }
+  
+  .formdata-table-row td {
+    border-right: 1px solid #e8e8e8; // Light grey right border for row cells
+    padding: 10px; // Padding for spacing
+  }
+  
+  .formdata-table-row td:last-child {
+    border-right: none; // Remove the right border for the last row cell
+  }
+  
+  .formdata-table-row {
+    border-bottom: 1px solid #e8e8e8; // Light grey bottom border for row separation
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .table-header .heading {
+    margin: 0;
+  }
+  
+  .table-header .search-bar {
+    max-width: 300px;
+  }
+  
+
+  .ant-pagination {
+
+    margin: calc(var(--unit)/3 *2) 0px  calc(var(--unit)/3) 0px !important;
+
+  }

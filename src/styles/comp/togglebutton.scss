@@ -1,0 +1,35 @@
+.external-div-toggle {
+    width: calc(var(--unit) * 5);
+    border-radius: 100px;
+    padding: calc(var(--unit) / 4);
+    border: 1px solid var(--y2);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    overflow: hidden;
+    transform: var(--trans-q);
+    .internal-div-toggle {
+        aspect-ratio: 1;
+        height: calc(var(--unit) * 2);
+        background: var(--y0);
+        border-radius: 100%;
+        box-shadow: var(--shadow);
+    }
+
+    &.active {
+        justify-content: flex-end;
+        background: var(--y0);
+
+        .internal-div-toggle {
+            background: var(--white);
+           
+        }
+    }
+}
+.toggle-parent 
+{
+    display: flex;
+    align-items: center;
+    gap: calc(var(--unit) / 2);
+}

@@ -1,0 +1,54 @@
+.form-card-box {
+    border-radius: calc(var(--unit) / 2);
+    width: 400px;
+    height: fit-content;
+    border: 1px solid var(--g4);
+
+    .form-card-box-heading {
+       height: 48px;
+        border-bottom: 1px solid var(--g4);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            font-size: var(--unit);
+            font-weight: bold;
+        }
+
+        .form-card-btn {
+            border-left: 1px solid var(--g4);
+            font-size: var(--unit);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: calc(var(--unit) / 2);
+        }
+    }
+
+
+    .form-card-data {
+        padding: calc(var(--unit) / 2);
+    }
+
+
+    .form-card-box-footer 
+    {
+        width: 100%;
+        border-top: 1px solid var(--g4);
+        display: flex;
+        align-items: right;
+        justify-content: flex-end;
+
+        .form-card-btn-footer 
+        {
+            border-left: 1px solid var(--g4);
+            padding: calc(var(--unit) / 2);
+            font-size: var(--unit);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: calc(var(--unit) / 2);
+        }
+    }
+}

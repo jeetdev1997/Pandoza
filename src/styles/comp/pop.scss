@@ -1,0 +1,59 @@
+.pop{
+    height: 100svh;
+    width: 100svw;
+    background: black;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.45);
+    position:fixed;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card-box{
+        height: fit-content;
+        min-width: 700px;
+        background: var(--white);
+        border-radius: calc(var(--unit));
+        position: relative;
+        
+        .close{
+            position: absolute;
+            top: 0px;
+            right:  calc(-1 * var(--unit)*3.5);
+            height: calc(var(--unit)*3);
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--white);
+            border-radius: 100px;
+            svg{
+                font-size: 30px;
+
+            }
+            
+        }
+
+
+        .header{
+
+            height: calc(var(--unit)*4);
+            padding: calc(var(--unit)*1);
+            width: 100%;
+            border-bottom: 1px solid var(--g5);
+            display: flex;
+            align-items:center ;
+            justify-content: flex-start;
+
+        }
+        .body{
+            padding: calc(var(--unit)*1);
+            position: relative;
+        }
+
+
+
+    }
+}

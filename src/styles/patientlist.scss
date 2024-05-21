@@ -1,0 +1,37 @@
+.patient-list-parent {
+    height: 100svh;
+
+    .patient-list-body-parent {
+
+        .patient-list-header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: calc(var(--unit) / 2);
+            padding: var(--unit) 0px;
+        }
+
+        .patient-list-body {
+            
+            .hcard_btn {
+                scale: 2;
+                transition: var(--trans-q);
+
+                &:hover {
+                    color: var(--y1);
+                }
+            }
+        }
+    }
+}
+
+// check box styling
+.ant-radio-inner {
+    background-color: var(--white) !important;
+    border: 1px solid var(--y2) !important;
+
+    &::after {
+        background: var(--y2) !important;
+        scale: 1.5 !important;
+    }
+}

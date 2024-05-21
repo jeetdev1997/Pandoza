@@ -1,0 +1,40 @@
+.doctor-registration {
+
+    .doctor-reg-left {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        border-right: 1px solid var(--g5);
+
+        .profile-image {
+
+            height: calc(var(--unit) * 17);
+            aspect-ratio: 1;
+            border-radius: 1000px;
+            background: var(--y5);
+            border: 1px solid var(--y2);
+
+
+        }
+    }
+
+    .doctor-reg-right {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+
+        .signature-image {
+
+            height: calc(var(--unit) * 10);
+            aspect-ratio: 2 / 1;
+            background: var(--y5);
+            border: 1px solid var(--y2);
+            border-radius: calc(var(--unit) / 3);
+
+        }
+    }
+}

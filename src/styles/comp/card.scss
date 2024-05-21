@@ -1,0 +1,44 @@
+
+
+
+.card {
+    background: var(--white);
+    border: 1px solid var(--g5);
+    border-radius: calc(var(--unit)/2);
+    margin: calc(var(--unit)/1) calc(var(--unit)/2)  0px calc(var(--unit)/2);
+    width: 60%;
+
+    animation: fadeup 0.6s ease-out 0s forwards ; 
+
+
+
+
+
+
+
+    .card-header  {
+        border-bottom: 1px solid var(--g5);
+        height: calc(var(--unit)*4);
+        display: flex;
+        align-items: center;
+        padding: 0px  calc(var(--unit)/1);
+        justify-content: space-between;
+
+        .header-btns{
+            height: 100%;
+            display: flex;
+        }
+    }
+    .card-body{
+        // commented to fix  border
+        padding: calc(var(--unit)/2) calc(var(--unit)/1);
+    }
+    .card-footer{
+        border-top: 1px solid var(--g5);
+        height: calc(var(--unit)*4);
+        display: flex;
+        align-items: center;
+        padding: 0px  calc(var(--unit)/1);
+        justify-content: flex-end;
+    }
+  }

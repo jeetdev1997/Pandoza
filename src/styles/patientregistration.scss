@@ -1,0 +1,193 @@
+.patient-registration-parent {
+    height: 100svh;
+
+    .form-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--unit);
+        padding: calc(var(--unit) /2) 0px;
+
+        .mui-input {
+            width: 100%;
+        }
+
+        .form-row-left {
+
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--unit);
+
+            .country-code {
+                width: 30%;
+            }
+        }
+
+
+        .form-row-right {
+
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--unit);
+
+            .country-code {
+                width: 30%;
+            }
+
+        }
+
+        .form-textarea {
+            width: 100%;
+        }
+
+        .range-picker {
+            width: 100% !important;
+            height: calc(var(--unit) * 4);
+            border: 1px solid #000;
+            color: #000;
+
+            &:hover {
+                border: 1px solid #FFD600;
+            }
+
+            &:focus {
+                border: 1px solid #FFD600;
+            }
+        }
+
+
+
+        .date-field-ant {
+            border: 1px solid var(--g4);
+            outline: 1px solid #fff;
+            box-shadow: none;
+
+            &:hover 
+            {
+                border: 1px solid var(--y2);
+            }
+
+        }
+    }
+
+    .general-details-card {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+
+        .general-details-left {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: calc(var(--unit) * 2);
+
+            .general-profile-image {
+                height: 200px;
+                width: 200px;
+                border-radius: 100%;
+                background: var(--y5);
+                border: 1px solid var(--y1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .general-profile-buttons {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: calc(var(--unit) / 2);
+
+                .file-button {
+                    .hidden {
+                        display: none;
+                    }
+                }
+
+            }
+        }
+
+        .general-details-right {
+            width: 70%;
+            height: 100%;
+        }
+    }
+}
+
+
+.ctm-modal{
+  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+}
+
+
+#modalVideo{
+    height: calc(var(--unit)*30);
+    width:  calc(var(--unit)*30);
+    object-fit: cover;
+    margin: auto;
+    border-radius: calc(var(--unit)*90);
+    position: relative;
+
+    
+
+ 
+}
+
+.video{
+    // background: url("../assets/login/aligner1.png");
+    // background: linear-gradient(red,blue);
+    background-size:contain !important ;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    height: calc(var(--unit)*30);
+    width:  calc(var(--unit)*30);
+    border-radius: 1000px;
+    position: absolute;
+    top: calc(50% - var(--unit)*2);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    animation: flik 0.5s infinite linear;
+
+    @keyframes flik {
+        0%{
+            background: url("../assets/login/aligner1.png");
+        }
+        50%{
+            background: url("../assets/login/aligner2.png");
+        }
+        100%{
+            background: url("../assets/login/aligner1.png");
+        }
+        
+    }
+   
+}
+
+
+
+.pop-btn{
+    margin: auto;
+    margin-top:  calc(var(--unit)*1);
+}

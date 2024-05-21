@@ -1,0 +1,51 @@
+.choosehospital-parent {
+    height: 100svh;
+    display: flex;
+    padding: 10px;
+
+    .choose-hospital-left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .choose-hospital {
+
+            .choose-header {
+                h1 {
+                    font-size: calc(var(--unit) * 2);
+                }
+
+                p {
+                    // font-size: 16px;
+                }
+            }
+
+            .choose-form {
+                margin-top: calc(var(--unit) * 2);
+                padding: var(--unit) 0px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .choose-btn-box 
+            {
+                display: flex;
+                align-items: center;
+                justify-self: start;
+                flex-direction: column;
+                gap: calc(var(--unit)/ 2);
+                padding: var(--unit) 0px;
+            }
+        }
+
+    }
+
+    .choose-hospital-right {
+        height: 100%;
+        width: 50%;
+        background: url("https://img.freepik.com/free-photo/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg?t=st=1715942911~exp=1715946511~hmac=8a6d0460491f6a430fac143a39295d7b12b3ae244e791124ca99ccf51102be6a&w=1380");
+        border-radius: var(--unit);
+    }
+}

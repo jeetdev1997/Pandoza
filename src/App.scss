@@ -1,0 +1,393 @@
+:root {
+  --black: #000;
+  --white: #ffffff;
+  // figma color codes
+  --y0: linear-gradient(0deg, #ffee00, #ffd600);
+  --y1: #ffb800;
+  --y2: #ffd600;
+  --y3: #ffee00;
+  --y4: #fff9aa;
+  --y5: #fffcd5;
+  // blues
+  --g0: #000099;
+  --g1: #00003b;
+  --g2: #42426d;
+  --g3: #6e6e8e;
+  --g4: #9999af;
+  --g5: #dbdbe0;
+  --g6: #726464;
+  --g7: #4f4f78;
+  // other colors
+  --success: #4cda00;
+  --success-l: #e1ffd1;
+  --info: #2a83f2;
+  --info-l: #dfedff;
+  --error: #ff4d00;
+  --error-l: #ffebed;
+  // other variable
+  --unit: 12px;
+  --btn-h: 40px;
+  --trans-s: all 1s ease-in-out;
+  --trans-q: all 0.3s ease-in-out;
+  --trans-m: all 0.6s ease-in-out;
+  --shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.4);
+}
+
+// custom fonts
+@font-face {
+  font-family: "nexa-bold";
+  src: url("./assets/fonts/Nexa-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "nexa-book";
+  src: url("./assets/fonts/Nexa-Book.woff2") format("woff2");
+  font-style: normal;
+}
+@font-face {
+  font-family: "nexa-light";
+  src: url("./assets/fonts/Nexa-Light.woff2") format("woff2");
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  // border: 1px solid red;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "nexa-book", sans-serif;
+  font-size: calc(var(--unit) + (var(--unit) / 3));
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100svh;
+  width: 100svw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-img-cover {
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.bg-img-contain {
+  background-position: center center !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.parent{
+  margin-left: calc(var(--unit)*7);
+  width: calc(100vw - (var(--unit)*7));
+  padding:0px calc(var(--unit)*2) 0px 0px; 
+  height: calc(100% - (var(--unit) * 6));
+  // overflow: hidden;
+  // background:red;
+
+
+
+  .main-content{
+    height: calc(100svh - (var(--unit) * 6));
+    overflow: hidden;
+    // background:red;
+  }
+
+}
+
+
+
+.bg-img-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-links {
+  color: var(--info);
+}
+
+.heading {
+  font-family: "nexa-bold";
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: calc(var(--unit) * 3);
+  background: var(--y0);
+}
+//  material ui customizations
+
+label {
+  margin-top: -3px;
+}
+
+input.MuiInputBase-root:not(textarea),
+input.MuiOutlinedInput-root:not(textarea),
+input.MuiInputBase-colorPrimary:not(textarea),
+input.MuiInputBase-formControl:not(textarea) {
+  height: calc(var(--unit) * 3);
+
+}
+
+
+
+div.MuiInputBase-root,
+div.MuiOutlinedInput-root,
+div.MuiInputBase-colorPrimary,
+div.MuiInputBase-formControl
+{
+  height: calc(var(--unit) * 4 );
+}
+
+textarea.MuiInputBase-root,
+textarea.MuiOutlinedInput-root,
+textarea.MuiInputBase-colorPrimary,
+textarea.MuiInputBase-formControl
+{
+  min-height: calc(var(--unit) * 6) !important;
+}
+
+.btn {
+  height: calc(var(--unit) * 3);
+  display: flex;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--unit) / 2);
+  padding: 0px calc(var(--unit) / 1);
+  cursor: pointer;
+  border: 2px solid transparent;
+  background: var(--y3);
+
+  
+  &.btn-sec {
+    background: transparent;
+    border: 2px solid var(--y2);
+
+  }
+
+  &.btn-sec-r {
+    aspect-ratio: 1;
+    padding: 0px;
+  }
+
+  &.disable {
+    filter: grayscale(1);
+    .icon {
+      color: grey;
+    }
+  }
+}
+
+.btn-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--info);
+  gap: calc(var(--unit) / 3);
+  padding: 0px calc(var(--unit));
+  height: 100%;
+  border-left: 1px solid var(--g4);
+  .icon {
+    color: var(--g1);
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(var(--unit) * 2);
+  color: inherit;
+  cursor: pointer;
+}
+
+
+.btn-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--info);
+  gap: calc(var(--unit) / 3);
+  padding: 0px calc(var(--unit));
+  height: 100%;
+  cursor: pointer;
+  .icon {
+    color: var(--g1);
+   
+  }
+}
+
+
+@keyframes fadeup {
+
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+}
+
+
+// animation: fadeup 0.6s ease-out 0s forwards ; 
+
+
+
+
+// settings for material ui designs customisations 
+// div.MuiInputBase-root, div.MuiOutlinedInput-root, div.MuiInputBase-colorPrimary, div.MuiInputBase-formControl 
+// {
+//   border: 1px solid var(--g5);
+//   outline: 1px solid var(--g5);
+// }
+
+
+
+// added by zaigham for global styling
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--unit);
+  padding: calc(var(--unit) /2) 0px;
+
+  .mui-input {
+      width: 100%;
+  }
+
+  .form-row-left {
+
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--unit);
+
+      .country-code {
+          width: 30%;
+      }
+  }
+
+
+  .form-row-right {
+
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: var(--unit);
+
+      .country-code {
+          width: 30%;
+      }
+
+  }
+  .form-row-right-toggle {
+
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: var(--unit);
+
+      .country-code {
+          width: 30%;
+      }
+
+  }
+
+  .form-textarea {
+      width: 100%;
+  }
+
+  .range-picker {
+      width: 100% !important;
+      height: calc(var(--unit) * 4);
+      border: 1px solid #000;
+      color: #000;
+
+      &:hover {
+          border: 1px solid #FFD600;
+      }
+
+      &:focus {
+          border: 1px solid #FFD600;
+      }
+  }
+
+
+
+  .date-field-ant {
+      border: 1px solid var(--g4);
+      outline: 1px solid #fff;
+      box-shadow: none;
+
+      &:hover 
+      {
+          border: 1px solid var(--y2);
+      }
+
+  }
+}
+
+.ant-pagination-item  
+{
+  border: 1px solid var(--y2) !important;
+
+ 
+}
+.ant-pagination-item-active 
+{ 
+  background: var(--y3) !important;
+  a 
+  {    
+    color: var(--black) !important;
+
+  }
+
+}
+
+// webkit scrollbar
+::-webkit-scrollbar {
+  width: calc(var(--unit)/2) !important;
+}
+::-webkit-scrollbar-track {
+  background: var(--g5) !important;
+  border-radius: 20px !important;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--y2) !important;
+  border-radius: 6px !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--g5) !important;
+}
+/* Custom Scrollbar for Firefox */
+
+
+/* For Firefox */
+.ant-table-body {
+  scrollbar-color: var(--y3) #fff !important; /* Thumb and track colors */
+  scrollbar-width: thin; /* Width of the scrollbar */
+  
+}

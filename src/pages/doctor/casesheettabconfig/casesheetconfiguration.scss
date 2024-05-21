@@ -1,0 +1,14 @@
+.casesheet-configuration-parent {
+
+    .casesheet-btn-div {
+        border: 1px solid var(--g5);
+        border-radius: calc(var(--unit)/2);
+        display: grid;
+        
+        grid-template-columns: repeat(4, 1fr);
+        padding: var(--unit);
+        margin-bottom: var(--unit);
+
+    }
+
+}

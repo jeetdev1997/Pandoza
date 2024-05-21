@@ -1,0 +1,119 @@
+.steps {
+  width: 100%;
+  height: calc(100svh - (var(--unit) * 6));
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .counter {
+    width: calc(var(--unit) * 6);
+    height: calc(100% - (var(--unit)*1));
+    position: relative;
+    margin-top: calc(var(--unit)*1);
+
+    .line-base{
+        position: absolute;
+        width: 3px;
+        height: calc(var(--unit)*10);
+        background: var(--g5);
+        left: 50%;
+        top: calc(var(--unit) * 0);
+        transform: translateX(-50%);
+
+    }
+    .line-main{
+        position: absolute;
+        width: 3px;
+        height: calc(var(--unit)*8);
+        background: var(--y2);
+        left: 50%;
+        top: calc(var(--unit) * 0);
+        transform: translateX(-50%);
+        transition: var(--trans);
+
+    }
+
+    .step {
+      width: calc(var(--unit) * 3);
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--white);
+      border-radius: 1000px;
+      border: 2px solid var(--y2);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer;
+      transition: var(--trans-q);
+
+      &.active{
+        background: var(--y2);
+        &::after{
+        opacity: 1;
+
+
+        }
+      }
+&.completed{
+  background: var(--y2);
+
+
+}
+
+
+      &:nth-child(1){
+        top: 10px !important;
+      }
+ 
+
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: calc(var(--unit)*2/3) solid transparent;
+        border-bottom: calc(var(--unit)*2/3) solid transparent;
+        border-left: calc(var(--unit)*2/3) solid var(--y2);
+        left: calc(-1 * var(--unit));
+      transition: var(--trans-q);
+      opacity: 0;
+
+       
+      }
+    }
+  }
+  .content {
+    width: calc(100% - (var(--unit) * 6));
+    height: 100%;
+
+    .smallheader {
+      height: calc(var(--unit) * 5);
+      border-bottom: 1px solid var(--g5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px calc(var(--unit));
+
+      .nav-btns {
+        display: flex;
+        align-items: center;
+        gap: calc(var(--unit) / 1);
+        justify-content: flex-end;
+      }
+    }
+
+    .content-main {
+      padding: calc(var(--unit));
+      width: 100%;
+      height: calc(100% - var(--unit) * 5);
+      // added for spacing(zaigham)
+      display: flex;
+      flex-direction: column;
+      gap: var(--unit);
+      // 
+    }
+  }
+}

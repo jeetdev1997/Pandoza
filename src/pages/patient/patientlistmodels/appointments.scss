@@ -1,0 +1,26 @@
+.appointment-model-parent {
+    // width: 600px;
+
+    .option {
+        padding: var(--unit);
+        height: calc(var(--unit)*4);
+        border-radius: calc(var(--unit)/2) calc(var(--unit)/2) 0px 0px;
+        cursor: pointer;
+        border-bottom: 1px solid var(--y1);
+
+
+
+        &.blankdiv {
+            width: 100%;
+            height: calc(var(--unit)*4);
+
+
+        }
+        &.active {
+            background-color: var(--y4);
+            border: 1px solid var(--y1);
+            border-bottom: none;
+        }
+
+    }
+}
