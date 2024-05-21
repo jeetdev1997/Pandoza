@@ -79,7 +79,7 @@ const SpecialityMaster = () => {
     {
       title: "Action",
       render: (text, record) => (
-        <button className="btn-4">
+        <button className="btn-4" onClick={() => handleEdit(record)}>
           {" "}
           <span className="icon">
             <MdOutlineEdit />
@@ -98,6 +98,17 @@ const SpecialityMaster = () => {
       status: data.status,
     };
   });
+// edit function start
+const handleEdit = (record) => {
+    setFormData({
+        specialityname: record.name,
+        specialitycode: record.code,
+      });
+  };
+  
+
+
+  // edit function end
   console.log("table data => ",tabledata);
   useEffect(() => {
     fetchData();
