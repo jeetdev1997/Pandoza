@@ -1,0 +1,812 @@
+{
+	"info": {
+		"_postman_id": "9b73605c-d4dd-4c75-afdc-876990e5fc6c",
+		"name": "Book An Appointment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34307375",
+		"_collection_link": "https://speeding-shadow-25150.postman.co/workspace/PMS~45727918-786d-487c-bc4f-004bb99250b5/collection/34621851-9b73605c-d4dd-4c75-afdc-876990e5fc6c?action=share&source=collection_link&creator=34307375"
+	},
+	"item": [
+		{
+			"name": "checkDoctorHolidayList",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"doctorId\": \"52\",\r\n    \"holidayFrom\": \"30-04-2024\",\r\n    \"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\",\r\n        \"profilePicture\": null\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/checkDoctorHolidayList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"checkDoctorHolidayList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDoctorByUnitDepartmentForAppointmentDefault",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"scheduleDate\"\r\n: \r\n\"30-04-2024\",\r\n\"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\",\r\n        \"profilePicture\": null\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getDoctorByUnitDepartmentForAppointmentDefault",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"getDoctorByUnitDepartmentForAppointmentDefault"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insuAndCredCompByPatient",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"patientId\"\r\n: \r\n8258,\r\n\"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\",\r\n        \"profilePicture\": null\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/insuAndCredCompByPatient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"insuAndCredCompByPatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "debitNoteBillsByPat",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"patientId\"\r\n: \r\n8258,\r\n\"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\",\r\n        \"profilePicture\": null\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/debitNoteBillsByPat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"debitNoteBillsByPat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBillNoByPatient",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\",\r\n        \"profilePicture\": null\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getBillNoByPatient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"getBillNoByPatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDocumentListBypatientId",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\",\r\n        \"profilePicture\": null\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getDocumentListBypatientId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"getDocumentListBypatientId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPatientById?patientId=8258",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\",\r\n        \"profilePicture\": null\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getPatientById?patientId=8258",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"getPatientById"
+					],
+					"query": [
+						{
+							"key": "patientId",
+							"value": "8258"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPatientByFirstName?firstName=g",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appointmentDate\": \"30-04-2024\",\r\n    \"doctorId\": \"52\",\r\n    \"patientId\": \"8285\",\r\n    \"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\",\r\n        \"profilePicture\": null\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/checkAppointmentExistOrNot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"checkAppointmentExistOrNot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkAppointmentExistOrNot",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appointmentDate\": \"30-04-2024\",\r\n    \"doctorId\": \"52\",\r\n    \"patientId\": \"8285\",\r\n    \"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\",\r\n        \"profilePicture\": null\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/checkAppointmentExistOrNot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"checkAppointmentExistOrNot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "confirmAppointmentNew",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appointmentDate\": \"03-05-2024\",\r\n    \"visitTypeIds\": [\r\n        1,\r\n        2,\r\n        4,\r\n        5,\r\n        6,\r\n        7,\r\n        8\r\n    ],\r\n    \"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getAppointmentList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"getAppointmentList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "appointmentList",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isReferalAppointment\": \"I\",\r\n    \"appoPatientReferralId\": \"\",\r\n    \"allowMultiAppointment\": \"N\",\r\n    \"channelId\": 3,\r\n    \"appointmentTypeId\": 1,\r\n    \"appointmentMediaTypeId\": 1,\r\n    \"patientName\": \"Mahadu Ghuge\",\r\n    \"patientId\": 8258,\r\n    \"appointmentId\": \"\",\r\n    \"redirectToSlot\": \"\",\r\n    \"prefixId\": 1,\r\n    \"patientIDForSelPatient\": 8258,\r\n    \"code\": \"+91\",\r\n    \"mobileNumber\": \"8275949787\",\r\n    \"genderId\": 1,\r\n    \"nhsNumber\": \"\",\r\n    \"dateOfBirth\": \"05-03-1992\",\r\n    \"Docradio\": true,\r\n    \"visitTypeId\": 1,\r\n    \"patientAppointmentNote\": \"\",\r\n    \"doctorId\": 52,\r\n    \"departmentId\": 19,\r\n    \"classificationId\": 45,\r\n    \"appointmentDate\": \"03-05-2024\",\r\n    \"timeSlot\": \"09:15\",\r\n    \"endTimeSlot\": \"09:20\",\r\n    \"referralType\": \"\",\r\n    \"reffrealTypesGP\": \"\",\r\n    \"reffrealIds\": \"\",\r\n    \"selectedSponsor\": \"\",\r\n    \"selectedInsurance\": \"\",\r\n    \"categoryTypeId\": 1,\r\n    \"paymenttypeidhid\": 0,\r\n    \"patientInsuranceDetailsId\": \"\",\r\n    \"patientCreditCompanyDetailsId\": \"\",\r\n    \"insucompanyId\": \"\",\r\n    \"insuranceNoid\": \"\",\r\n    \"typeId\": 0,\r\n    \"isEdit\": \"\",\r\n    \"sponsorcompanyId\": \"\",\r\n    \"sponsorMembershipNo\": \"\",\r\n    \"emailid\": \"\",\r\n    \"startDateid\": \"\",\r\n    \"endDateid\": \"\",\r\n    \"authorizationCode\": \"\",\r\n    \"authorizationDate\": \"3-5-2024\",\r\n    \"companyId\": \"\",\r\n    \"insuranceNo\": \"\",\r\n    \"startDate\": \"\",\r\n    \"endDate\": \"\",\r\n    \"selectedmailid\": \"\",\r\n    \"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/appointmentList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"appointmentList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAppointmentList",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appointmentDate\": \"03-05-2024\",\r\n    \"visitTypeIds\": [\r\n        1,\r\n        2,\r\n        4,\r\n        5,\r\n        6,\r\n        7,\r\n        8\r\n    ],\r\n    \"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/misCallAppointmentList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"misCallAppointmentList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getServiceAppointmentList",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appointmentDate\": \"03-05-2024\",\r\n    \"visitTypeIds\": [\r\n        1,\r\n        2,\r\n        4,\r\n        5,\r\n        6,\r\n        7,\r\n        8\r\n    ],\r\n    \"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getServiceAppointmentList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"getServiceAppointmentList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "misCallAppointmentList",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appointmentDate\": \"03-05-2024\",\r\n    \"visitTypeIds\": [\r\n        1,\r\n        2,\r\n        4,\r\n        5,\r\n        6,\r\n        7,\r\n        8\r\n    ],\r\n    \"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/misCallAppointmentList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"misCallAppointmentList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doctors/bulkcanclresch",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appointmentDate\": \"03-05-2024\",\r\n    \"visitTypeIds\": [\r\n        1,\r\n        2,\r\n        4,\r\n        5,\r\n        6,\r\n        7,\r\n        8\r\n    ],\r\n    \"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getAppointmentWaitingList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"getAppointmentWaitingList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "globalSearch?query=s&name=s&roleId=3",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appointmentDate\": \"03-05-2024\",\r\n    \"visitTypeIds\": [\r\n        1,\r\n        2,\r\n        4,\r\n        5,\r\n        6,\r\n        7,\r\n        8\r\n    ],\r\n    \"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/globalSearch?query=s&name=s&roleId=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"globalSearch"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "s"
+						},
+						{
+							"key": "name",
+							"value": "s"
+						},
+						{
+							"key": "roleId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAppointmentWaitingList",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appointmentDate\": \"03-05-2024\",\r\n    \"visitTypeIds\": [\r\n        1,\r\n        2,\r\n        4,\r\n        5,\r\n        6,\r\n        7,\r\n        8\r\n    ],\r\n    \"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getAppointmentWaitingList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"getAppointmentWaitingList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cancelAppointmentBulk",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cancelById\": \"1\",\r\n    \"reasonMasterId\": \"1\",\r\n    \"doctorId\": \"17\",\r\n    \"appointmentDate\": \"07-05-2024\",\r\n    \"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/cancelAppointmentBulk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"cancelAppointmentBulk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rescheduleAppointmentBulk",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patientId\": null,\r\n    \"doctorId\": null,\r\n    \"fromDate\": \"2024-05-06\",\r\n    \"endDate\": \"2024-05-06\",\r\n    \"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getAppointmentsForDocUpload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"getAppointmentsForDocUpload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAppointmentsForDocUpload",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patientId\": null,\r\n    \"doctorId\": null,\r\n    \"fromDate\": \"2024-05-06\",\r\n    \"endDate\": \"2024-05-06\",\r\n    \"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getAppointmentsForDocUpload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"getAppointmentsForDocUpload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDoctorSuggestionList?doctorName=g",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sessionObject\": {\r\n        \"allUrlMap\": null,\r\n        \"accessUrlMap\": null,\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"listMessageConfiguration\": {\r\n            \"3\": \"((patientName))((timeSlot))((mrnNumber))((doctorName))((mrnNumber))((appointmentDate))((mrnNumber))((appointmentDate))((appointmentDate)),\",\r\n            \"4\": \"((patientName)),\",\r\n            \"5\": \"((timeSlot))((patientName)),\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"opdNumber\": null,\r\n        \"nurseId\": null,\r\n        \"doctorName\": null,\r\n        \"patientAppointmentId\": null,\r\n        \"preBillingFlag\": false,\r\n        \"profileName\": \"Amit Shukla\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getDoctorSuggestionList?doctorName=g",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Clinivantage-PMS",
+						"api",
+						"v01",
+						"getDoctorSuggestionList"
+					],
+					"query": [
+						{
+							"key": "doctorName",
+							"value": "g"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

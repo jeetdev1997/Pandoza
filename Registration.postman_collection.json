@@ -1,0 +1,1189 @@
+{
+	"info": {
+		"_postman_id": "36fac43a-9764-456f-9da2-ad820244b857",
+		"name": "Registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34307375",
+		"_collection_link": "https://speeding-shadow-25150.postman.co/workspace/PMS~45727918-786d-487c-bc4f-004bb99250b5/collection/34681981-36fac43a-9764-456f-9da2-ad820244b857?action=share&source=collection_link&creator=34307375"
+	},
+	"item": [
+		{
+			"name": "PatientRegistration",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/savePatient",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjYXJlc3luYyIsImV4cCI6MTcxNDA0MDY0NywiaWF0IjoxNzEzOTU0MjQ3LCJ1c2VybmFtZSI6ImNhcmVzeW5jIn0.O4-KukTLkmfc8TwZOfePgItBRf6Wds7rg8QJi1d8DQY"
+							},
+							{
+								"key": "userName",
+								"value": "caresync"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"channelId\": \"1\",\r\n    \"file-1[]\": \"(binary)\",\r\n    \"imageBase64File\": \"\",\r\n    \"prefixId\": 1,\r\n    \"patientId\": \"\",\r\n    \"nevigationFlag\": \"\",\r\n    \"nevigationReferrelId\": \"\",\r\n    \"nevigationPatientId\": \"\",\r\n    \"missCallAppointment\": false,\r\n    \"nevigationReferrelIds\": \"\",\r\n    \"mrnNumber\": \"\",\r\n    \"navigate\": \"\",\r\n    \"doctorId\": \"\",\r\n    \"timeSlot\": \"\",\r\n    \"endTimeSlot\": \"\",\r\n    \"visitTypeId\": \"\",\r\n    \"departmentId\": \"\",\r\n    \"appointmentDate\": \"\",\r\n    \"redirectToSlot\": \"\",\r\n    \"firstName\": \"Sakshi\",\r\n    \"middleName\": \"\",\r\n    \"lastName\": \"Thekedar\",\r\n    \"dateOfBirth\": \"15-09-2019\",\r\n    \"genderId\": 1,\r\n    \"nhsNumber\": \"111-12-1111\",\r\n    \"nationalityId\": 1,\r\n    \"officeNumber\": \"dfbng\",\r\n    \"residentialNumber\": \"rfghgfxfghvcxe\",\r\n    \"facebookId\": \"ssd\",\r\n    \"emailId\": \"sakshi.deshmukh@gmail.com\",\r\n    \"code\": \"+91\",\r\n    \"mobileNumber\": \"9511807078\",\r\n    \"whatsappConCode\": \"+91\",\r\n    \"twitterId\": \"9511808678\",\r\n    \"addressDesc\": \"Sdfvbgf\",\r\n    \"villageName\": \"sdfghgf\",\r\n    \"area\": \"pune\",\r\n    \"pincode\": \"445101\",\r\n    \"countryId\": 1,\r\n    \"stateId\": 19,\r\n    \"cityId\": 635,\r\n    \"referralType\": \"ConsultantReferral\",\r\n    \"NHS\": \"\",\r\n    \"referalType\": \"ConsultantReferral\",\r\n    \"referalId\": 13,\r\n    \"nhsMasterDtolist\": [\r\n        13\r\n    ],\r\n    \"nhsName\": \"Abhay Chopada\",\r\n    \"nhsAddress\": \"\",\r\n    \"nhsTelephone\": \"2070999333\",\r\n    \"nhsFax\": \"\",\r\n    \"nhsEmail\": \"gastrosurgery@gmail.com\",\r\n    \"kinFirstName\": \"Test\",\r\n    \"kinMiddleName\": \"Sdfd\",\r\n    \"kinLastName\": \"Test\",\r\n    \"kinRelationId\": 7,\r\n    \"kinAddress\": \"dfbfd\",\r\n    \"kinCountryCode\": \"+44\",\r\n    \"kinMobileNumber\": \"77657876544\",\r\n    \"documentDate\": \"25-04-2024\",\r\n    \"listPatientInsuranceDetailsDto\": [\r\n        {\r\n            \"companyId\": 254,\r\n            \"tariffId\": \"null\",\r\n            \"associateCompanyId\": \"null\",\r\n            \"planId\": \"null\",\r\n            \"insuranceAmount\": \"null\",\r\n            \"insuranceNo\": \"dfbfds\",\r\n            \"startDate\": \"30-04-2024\",\r\n            \"endDate\": \"30-04-2024\"\r\n        }\r\n    ],\r\n    \"listHospitalPatientRefDtoList\": [\r\n        {\r\n            \"hospitalRefId\": \"\",\r\n            \"hospitalName\": \"fghhgfd\",\r\n            \"hospitalRefNumber\": \"sfghhgfd\"\r\n        }\r\n    ],\r\n     \"sessionObject\": {\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"channelId\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/savePatient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"savePatient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveCompanyMaster",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyCode\": \"Test 2\",\r\n    \"companyDesc\": \"Test API 2\",\r\n    \"companyTypeId\": \"2\",\r\n    \"creditLimitDays\": \"5\",\r\n    \"reportPath\": \"test\",\r\n    \"contactPersonName\": \"test api person-2\",\r\n    \"personAddress\": \"Pune\",\r\n    \"countryId\": \"1\",\r\n    \"stateId\": \"19\",\r\n    \"cityId\": \"635\",\r\n    \"area\": \"pune\",\r\n    \"zipcode\": \"445001\",\r\n    \"mobileNo\": \"1234567895\",\r\n    \"telephoneNo\": \"\",\r\n    \"emailid\": \"test2@gmail.com\",\r\n    \"countryCode\": \"+44\",\r\n    \"sessionObject\": {\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 1005,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/saveCompanyMaster",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"saveCompanyMaster"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getKinRelationList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sessionObject\": {\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 1005,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getKinRelationList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"getKinRelationList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDocumentTypeList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sessionObject\": {\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 1005,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getDocumentTypeList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"getDocumentTypeList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getInsuranceCompanies",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sessionObject\": {\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 1005,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getInsuranceCompanies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"getInsuranceCompanies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveNhsDetailsPatientreg",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nhsName\": \"test2\",\r\n    \"nhsAddress\": \"Sidney hill, sr no 34/1\",\r\n    \"nhsTelephone\": \"45465256421\",\r\n    \"nhsFax\": \"\",\r\n    \"nhsEmail\": \"test2@gmail.com\",\r\n    \"streetName\": \"Pune\",\r\n    \"town\": \"pune\",\r\n    \"postCode\": \"445001\",\r\n    \"countryId\": null,\r\n    \"stateId\": null,\r\n    \"cityId\": null,\r\n    \"isConsultantReferral\": \"I\",\r\n    \"sessionObject\": {\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 1005,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/saveNhsDetailsPatientreg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"saveNhsDetailsPatientreg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ValidateLoginAPI",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/validateLogin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"21232f297a57a5a743894a0e4a801fc3\",\r\n    \"password\": \"6e14232f88d3058f0b11deebacd5804d\",\r\n    \"browserFingerPrint\": \"eb46fd1028b39794f4de40099f7e8ee7\",\r\n    \"pwd\": \"Clini@1234\",\r\n    \"genCaptcha\": \"sIx1lo\",\r\n    \"captcha\": \"sIx1lo\",\r\n    \"hospitalId\": \"1\",\r\n    \"hiddenRoleId\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/validateLogin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"validateLogin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AppointmentsAPI",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/appointments",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientId\": 5737,\r\n    \"unitId\": 1,\r\n    \"hospitalId\": 1,\r\n    \"zoneDesc\": \"Asia/Calcutta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/appointments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"appointments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GetLISTOFPatient",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/getListOfPatient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"unitId\": 1,\r\n    \"hospitalId\": 1,\r\n    \"sessionObject\": {\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\",\r\n        \"channelId\":1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getListOfPatient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"getListOfPatient"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SaveDoctor",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/registerDoctor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"doctorId\": 0,\r\n    \"userId\": null,\r\n    \"doctorNumber\": \"\",\r\n    \"firstName\": \"PrihulDoctor\",\r\n    \"middleName\": \"\",\r\n    \"lastName\": \"DoctorTestji\",\r\n    \"dateOfBirth\": null,\r\n    \"subGroupId\": null,\r\n    \"doctorTypeId\": 10,\r\n    \"genderId\": 1,\r\n    \"maritalStatusId\": 1,\r\n    \"employeeNumber\": \"sakshi353\",\r\n    \"pfNumber\": null,\r\n    \"panNumber\": null,\r\n    \"dateOfJoining\": null,\r\n    \"accessCardNumber\": null,\r\n    \"registrationNumber\": \"sakshi3kkj90bjk\",\r\n    \"emailId\": \"kufawohe@closetab.email\",\r\n    \"mobileNumber\": \"9511808678\",\r\n    \"pincode\": \"445001\",\r\n    \"countryId\": 1,\r\n    \"stateId\": 19,\r\n    \"cityId\": 581,\r\n    \"area\": \"pune\",\r\n    \"phoneNumber\": \"\",\r\n    \"exprience\": \"3\",\r\n    \"education\": \"ms\",\r\n    \"status\": \"\\u0000\",\r\n    \"createdBy\": 0,\r\n    \"createdDate\": null,\r\n    \"profilePicture\": null,\r\n    \"signature\": null,\r\n    \"doctorEpisodTimeSapn\": null,\r\n    \"unitId\": null,\r\n    \"classificationId\": null,\r\n    \"followUpDuration\": null,\r\n    \"doctorAssistantLink\": null,\r\n    \"listDoctorAddressDetailsDto\": null,\r\n    \"listDoctorUnitDepartmentMapperDto\": [\r\n        {\r\n            \"userId\": null,\r\n            \"channelId\": null,\r\n            \"doctorId\": 0,\r\n            \"unitId\": 1,\r\n            \"departmentId\": 1,\r\n            \"status\": \"\\u0000\",\r\n            \"isDefalultDoctor\": \"A\",\r\n            \"createdBy\": 0,\r\n            \"createdDate\": null,\r\n            \"departmentName\": null,\r\n            \"unitName\": null,\r\n            \"zoneDesc\": null,\r\n            \"doctorName\": null,\r\n            \"profilePicture\": null,\r\n            \"classificationDesc\": null,\r\n            \"scheduleDate\": null,\r\n            \"firstName\": null,\r\n            \"middleName\": null,\r\n            \"lastName\": null,\r\n            \"hospitalId\": null,\r\n            \"unitAddress\": null,\r\n            \"classificationId\": 1,\r\n            \"classificationdesc\": null,\r\n            \"applicationId\": null,\r\n            \"doctorLocalId\": null,\r\n            \"logo\": null\r\n        }\r\n    ],\r\n    \"listDoctorUnitVisittypeMapperDto\": [\r\n        {\r\n            \"doctorId\": 0,\r\n            \"unitId\": 1,\r\n            \"visitTypeId\": 1,\r\n            \"visitTypeDesc\": null,\r\n            \"status\": \"\\u0000\",\r\n            \"isDefaultVisitType\": \"\\u0000\",\r\n            \"createdDate\": null,\r\n            \"timeInterval\": \"15\",\r\n            \"color\": \"Green\",\r\n            \"unitName\": null\r\n        },\r\n        {\r\n            \"doctorId\": 0,\r\n            \"unitId\": 1,\r\n            \"visitTypeId\": 4,\r\n            \"visitTypeDesc\": null,\r\n            \"status\": \"\\u0000\",\r\n            \"isDefaultVisitType\": \"\\u0000\",\r\n            \"createdDate\": null,\r\n            \"timeInterval\": \"15\",\r\n            \"color\": \"Green\",\r\n            \"unitName\": null\r\n        },\r\n        {\r\n            \"doctorId\": 0,\r\n            \"unitId\": 1,\r\n            \"visitTypeId\": 3,\r\n            \"visitTypeDesc\": null,\r\n            \"status\": \"\\u0000\",\r\n            \"isDefaultVisitType\": \"\\u0000\",\r\n            \"createdDate\": null,\r\n            \"timeInterval\": \"15\",\r\n            \"color\": \"Green\",\r\n            \"unitName\": null\r\n        },\r\n        {\r\n            \"doctorId\": 0,\r\n            \"unitId\": 1,\r\n            \"visitTypeId\": 2,\r\n            \"visitTypeDesc\": null,\r\n            \"status\": \"\\u0000\",\r\n            \"isDefaultVisitType\": \"\\u0000\",\r\n            \"createdDate\": null,\r\n            \"timeInterval\": \"15\",\r\n            \"color\": \"Green\",\r\n            \"unitName\": null\r\n        },\r\n        {\r\n            \"doctorId\": 0,\r\n            \"unitId\": 1,\r\n            \"visitTypeId\": 5,\r\n            \"visitTypeDesc\": null,\r\n            \"status\": \"\\u0000\",\r\n            \"isDefaultVisitType\": \"\\u0000\",\r\n            \"createdDate\": null,\r\n            \"timeInterval\": \"15\",\r\n            \"color\": \"Green\",\r\n            \"unitName\": null\r\n        },\r\n        {\r\n            \"doctorId\": 0,\r\n            \"unitId\": 1,\r\n            \"visitTypeId\": 6,\r\n            \"visitTypeDesc\": null,\r\n            \"status\": \"\\u0000\",\r\n            \"isDefaultVisitType\": \"\\u0000\",\r\n            \"createdDate\": null,\r\n            \"timeInterval\": \"15\",\r\n            \"color\": \"Green\",\r\n            \"unitName\": null\r\n        },\r\n        {\r\n            \"doctorId\": 0,\r\n            \"unitId\": 1,\r\n            \"visitTypeId\": 7,\r\n            \"visitTypeDesc\": null,\r\n            \"status\": \"\\u0000\",\r\n            \"isDefaultVisitType\": \"\\u0000\",\r\n            \"createdDate\": null,\r\n            \"timeInterval\": \"15\",\r\n            \"color\": \"Green\",\r\n            \"unitName\": null\r\n        }\r\n    ],\r\n    \"listDoctorClassificationMapperDto\": null,\r\n    \"listBankMapperDto\": [\r\n        {\r\n            \"doctorBankDetailsId\": null,\r\n            \"doctorId\": null,\r\n            \"doctorBankName\": \"jggxcghjop\",\r\n            \"doctorIfscCode\": \"567uygfdsdft\",\r\n            \"doctorAccountNumber\": \"78987654322345\",\r\n            \"doctorAccountName\": \"sdfghhgfdsa\",\r\n            \"isHeathCode\": \"I\",\r\n            \"status\": null\r\n        }\r\n    ],\r\n    \"letterPromptDataListDto\": null,\r\n    \"sessionObject\": {\r\n        \"listAccionIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 713,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\"\r\n    },\r\n    \"isElectronicCoverSheet\": \"I\",\r\n    \"userName\": null,\r\n    \"password\": null,\r\n    \"cpdPoints\": null,\r\n    \"aboutDoctor\": \"jhgfcghuiohjkjhf\",\r\n    \"countryCode\": \"+44\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/registerDoctor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"registerDoctor"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GEnderMaster",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/genderMaster",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"status\":\"A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/genderMaster",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"genderMaster"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CountryList",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/countryMaster",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/countryMaster",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"countryMaster"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "StateMaster",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/stateMaster",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=628EAB752AA4E52AFE4654186C49E462; JSESSIONID=13635948B96D1B7392B96536095BCAD6; JSESSIONID=628EAB752AA4E52AFE4654186C49E462; JSESSIONID=13635948B96D1B7392B96536095BCAD6; JSESSIONID=97A563D2CF34CFB0FD9EA04953BA3D15; JSESSIONID=13635948B96D1B7392B96536095BCAD6"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"countryId\":1\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/stateMaster",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"stateMaster"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CityMaster",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/cityMaster",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=628EAB752AA4E52AFE4654186C49E462; JSESSIONID=13635948B96D1B7392B96536095BCAD6; JSESSIONID=628EAB752AA4E52AFE4654186C49E462; JSESSIONID=13635948B96D1B7392B96536095BCAD6"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"stateId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/cityMaster",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"cityMaster"
+							],
+							"query": [
+								{
+									"key": "stateId",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ValidatePatient/CheckPatientAlreadyExistsORNOT",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/checkPatientExistOrNot",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"connection": true,
+							"accept-encoding": true,
+							"accept": true,
+							"user-agent": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=63E0BD38727E0B6C827DD33310AF68A5",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Gargi\",\n    \"middleName\": \"\",\n    \"lastName\": \"Thekedar\",\n    \"emailId\": \"sakshi.deshmukh@axonichealth.com\",\n    \"mobileNumber\": \"9511808078\",\n    \"dateOfBirth\": \"15-04-2019\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/checkPatientExistOrNot",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"checkPatientExistOrNot"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RoleMasterListForEmployee",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/roleListForEmployeeRegistration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/roleListForEmployeeRegistration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"roleListForEmployeeRegistration"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AppointmentTabOnPatientList",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/appointmentsForPatient/patient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientId\":9849\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/appointmentsForPatient/patient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"appointmentsForPatient",
+								"patient"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "getCoversheetListbyPatientandDoc",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/getCoversheetListbyPatientandDoc",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWppdEBjbGluaXZhbnRhZ2UuY29tIiwiZXhwIjoxNzE0NzQyODQyLCJpYXQiOjE3MTQ2NTY0NDIsInVzZXJuYW1lIjoic3VqaXRAY2xpbml2YW50YWdlLmNvbSJ9.wB4k-Okh062zjCJN1It9nzdBCkOSbCFy4NP2HCFx7KI"
+							},
+							{
+								"key": "Username",
+								"value": "1005"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientId\": \"9849\",\r\n    \"fromDate\": null,\r\n    \"toDate\": null,\r\n    \"doctorId\": \"52\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/getCoversheetListbyPatientandDoc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"getCoversheetListbyPatientandDoc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GetPatientById",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/getPatientById",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientId\":9837\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getPatientById",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"getPatientById"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "getBillNoByPatient",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/getBillNoByPatient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientId\":9837,\r\n    \"fromDate\":\"24-04-2024\",\r\n    \"toDate\":\"02-05-2024\",\r\n\"sessionObject\": {\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"channelId\": 1\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getBillNoByPatient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"getBillNoByPatient"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BillStatus",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/getBillingStatusList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getBillingStatusList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"getBillingStatusList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "getCoversheetListbyPatientandDoc",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/getCoversheetListbyPatientandDoc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientId\": \"9659\",\r\n    \"fromDate\": \"01-03-2024\",\r\n    \"toDate\": \"03-05-2024\",\r\n    \"doctorId\": \"52\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getCoversheetListbyPatientandDoc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"getCoversheetListbyPatientandDoc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "getCoversheetAttachmentForPatientList",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/getCoversheetAttachmentForPatientList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientId\": \"9622\",\r\n    \"fromDate\": \"\",\r\n    \"toDate\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getCoversheetAttachmentForPatientList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"getCoversheetAttachmentForPatientList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/getCoversheetAttachmentForPatientList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientId\": \"9622\",\r\n    \"documentTypeId\": \"0\",\r\n    \"fromDate\": null,\r\n    \"toDate\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getCoversheetAttachmentForPatientList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"getCoversheetAttachmentForPatientList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "getPublicAndPrivatePatientDocList",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/getPublicAndPrivatePatientDocList",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=A58664E2BA367A6130AB0083B27B5162"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"patientId\": \"9622\",\n    \"documentTypeId\": \"0\",\n    \"fromDate\": \"2024-04-01\",\n    \"toDate\": \"2024-05-03\",\n    \"sessionObject\": {\n        \"unitId\": 1,\n        \"hospitalId\": 1\n    }\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getPublicAndPrivatePatientDocList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"getPublicAndPrivatePatientDocList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PatientListOrdersTab",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/getOrdersByPatient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientId\": \"9615\",\r\n    \"fromDate\": \"01-03-2024\",\r\n    \"toDate\": \"03-05-2024\",\r\n    \"doctorId\": \"52\",\r\n    \"sessionObject\": {\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getOrdersByPatient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"getOrdersByPatient"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PrescriptionTabonPatientList",
+			"item": [
+				{
+					"name": "http://localhost:8080/Clinivantage-PMS/api/v01/getMedicationsSlipListByPatient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientId\": \"9615\",\r\n    \"fromDate\": \"18-04-2024\",\r\n    \"toDate\": \"03-05-2024\",\r\n    \"doctorId\": \"52\",\r\n    \"sessionObject\": {\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getMedicationsSlipListByPatient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"getMedicationsSlipListByPatient"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PrefixMaster",
+			"item": [
+				{
+					"name": "prefixMaster",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://pmsqa.clinivantage.co.in/api/v01/prefixMaster",
+							"protocol": "https",
+							"host": [
+								"pmsqa",
+								"clinivantage",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v01",
+								"prefixMaster"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CountryMaster",
+			"item": [
+				{
+					"name": "stateMaster",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://pmsqa.clinivantage.co.in/api/v01/stateMaster",
+							"protocol": "https",
+							"host": [
+								"pmsqa",
+								"clinivantage",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v01",
+								"stateMaster"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "countryMaster",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://pmsqa.clinivantage.co.in/api/v01/countryMaster",
+							"protocol": "https",
+							"host": [
+								"pmsqa",
+								"clinivantage",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v01",
+								"countryMaster"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cityMaster",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"stateId\": 19\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://pmsqa.clinivantage.co.in/api/v01/cityMaster",
+							"protocol": "https",
+							"host": [
+								"pmsqa",
+								"clinivantage",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v01",
+								"cityMaster"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "genderMaster",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://pmsqa.clinivantage.co.in/api/v01/genderMaster",
+							"protocol": "https",
+							"host": [
+								"pmsqa",
+								"clinivantage",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v01",
+								"genderMaster"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "NHS Master",
+			"item": [
+				{
+					"name": "getNHSMaster",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sessionObject\": {\r\n        \"listTabIds\": {\r\n            \"155\": \"155\"\r\n        },\r\n        \"listModuleIds\": {\r\n            \"124\": \"124\"\r\n        },\r\n        \"roleMasterId\": 10,\r\n        \"userMasterId\": 1005,\r\n        \"unitId\": 1,\r\n        \"hospitalId\": 1,\r\n        \"doctorId\": null,\r\n        \"patientId\": null,\r\n        \"userName\": \"32fd7848cdcd58fffdaba20f4a4428d1\",\r\n        \"zoneDesc\": \"GB\"\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Clinivantage-PMS/api/v01/getNHSMaster",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Clinivantage-PMS",
+								"api",
+								"v01",
+								"getNHSMaster"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
