@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback } from "react";
+import React, { useState, useRef, useCallback, useEffect } from "react";
 import { Table, Input, Button, Space } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import { FaRegAddressCard } from "react-icons/fa6";
@@ -6,6 +6,7 @@ import MainHeader from "../../../components/MainHeader";
 import { MdAdd } from "react-icons/md";
 import broken from "../../../assets/broken.webp";
 import "./doctorlist.scss";
+import { useStateValue } from "../../../context/Context";
 
 const DoctorList = () => {
   const initialData = [
@@ -40,11 +41,19 @@ const DoctorList = () => {
     // Add more data objects as needed
   ];
 
+  const { doctorlist } = useStateValue();
+
+  const [doctorlists, setDoctorlists] = useState([])
   const [searchText, setSearchText] = useState('');
   const [searchedColumn, setSearchedColumn] = useState('');
   const [data, setData] = useState(initialData);
   const searchInput = useRef(null);
-
+  useEffect(() => {
+    // console.log("doctorlist::::", doctorlist);
+    if (doctorlist) {
+      setDoctorlists(doctorlist);
+    }
+  }, [doctorlist]);
   // Custom debounce function
   const debounce = (func, delay) => {
     let debounceTimer;
@@ -53,6 +62,17 @@ const DoctorList = () => {
       debounceTimer = setTimeout(() => func.apply(this, args), delay);
     };
   };
+
+  const doctorData = doctorlists.map((item, index) => {
+    // console.log("data:", doctorlists);
+    return {
+      key: item.doctorId,
+      name: item.doctorName,
+      photo: item.profilePicture,
+      uhid: item.employeeNumber,
+      mobile: item.mobileNumber,
+    }
+  })
 
   const handleSearch = (selectedKeys, confirm, dataIndex) => {
     confirm();
@@ -207,7 +227,7 @@ const DoctorList = () => {
       />
       <div className="doctor-list-body">
         <Table
-          dataSource={data}
+          dataSource={doctorData}
           columns={columns}
           pagination={true} // Enable pagination if required
           scroll={{ y: "calc(100svh - var(--unit) * 22)" }}
