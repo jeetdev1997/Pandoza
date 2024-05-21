@@ -12,12 +12,15 @@ import axios from "axios";
 const SpecialityMaster = () => {
   const [department, setDepartment] = useState([])
   const [formData, setFormData] = useState({
-    departmentName: "",
-    departmentCode: "",
-    status: null,
-    isClinical: null,
+    specialityname: "",
+    specialitycode: "",
+    status: false,
+    isClinical: false,
   });
   const submitHandler = async (e) => {
+    console.log(formData);
+    
+    return;
     e.preventDefault();
 
     try {
@@ -91,7 +94,7 @@ const SpecialityMaster = () => {
       srno: index + 1,
       name: data.departmentName,
       code: data.departmentCode,
-      isclinical: data.isClinical,
+      isClinical: data.isClinical,
       status: data.status,
     };
   });
@@ -106,7 +109,7 @@ const SpecialityMaster = () => {
       <Card title="Primary Speciality" cardvalue={CardVal}>
         <form action="#" onSubmit={submitHandler}>
           <div className="form-row">
-            <CustomInput value={formData.specialityname} onChange={(e) => setFormData({ ...formData, specialityname: e.target.value })} required={true} label="Speciality Name" />
+            <CustomInput value={formData.specialityname} onChange={(e) => setFormData({ ...formData, specialityname: e.target.value })} required={true} label="Speciality Name"  />
           </div>
           <div className="form-row">
             <div className="form-row-left">
@@ -114,7 +117,7 @@ const SpecialityMaster = () => {
             </div>
             <div className="form-row-right !justify-start">
               <CustomToggleButton label="Status" onSendData={(toggleState) => setFormData({ ...formData, status: toggleState ? true : false })} />
-              <CustomToggleButton label="Is Clinical ?" onSendData={(toggleState) => setFormData({ ...formData, clinical: toggleState ? true : false, })} />
+              <CustomToggleButton label="Is Clinical ?" onSendData={(toggleState) => setFormData({ ...formData, isClinical: toggleState ? true : false, })} />
             </div>
           </div>
         </form>
