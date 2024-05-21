@@ -138,4 +138,5 @@ const SpecialityMaster = () => {
     </div>
   );
 };
+
 export default SpecialityMaster;
