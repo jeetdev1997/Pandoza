@@ -40,13 +40,19 @@ const SpecialityMaster = () => {
 
         if (isValid) {
             try {
+              let response ={};
                 if(operation === "Update"){
-                    const response = await axios.post(`${process.env.REACT_APP_URLV1}updateDepartmentMaster`, formData);   
+                  response = await axios.post(`${process.env.REACT_APP_URLV1}updateDepartmentMaster`, formData);   
                 }else{
-                    const response = await axios.post(`${process.env.REACT_APP_URLV1}saveDepartmentMaster`, formData);
+                  response = await axios.post(`${process.env.REACT_APP_URLV1}saveDepartmentMaster`, formData);
                 }
+               
                 setValidationErrors({});
                 seterror(false);
+                if(response?.data.status=='success') {
+                  fetchData();
+                }
+
             } catch (error) {
                 console.log("new error" + error);
             }
@@ -140,13 +146,20 @@ const SpecialityMaster = () => {
     useEffect(() => {
         fetchData();
     }, [])
+
+    useEffect((prev) => {
+      if(prev?.tabledata !==JSON.stringify(tabledata)) {
+        fetchData();
+      }
+      // 
+  }, [JSON.stringify(department)])
     return (
         <div className="speciality-master-parent parent">
             <MainHeader title="Speciality Master" link1="#" link1_text="Doctors" link2="/specialityMaster" link2_text="Speciality Master" />
-            {validationErrors.specialitycode && (
+            {validationErrors?.specialitycode !=''   && (
                 <div className="aria-errormessage">{validationErrors.specialitycode}</div>
             )}
-            {validationErrors.specialityname && (
+            {validationErrors?.specialityname !='' && (
                 <div className="aria-errormessage">{validationErrors.specialityname}</div>
             )}
             <Card title="Primary Speciality" cardvalue={CardVal}>
