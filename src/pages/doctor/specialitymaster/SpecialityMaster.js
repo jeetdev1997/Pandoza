@@ -147,7 +147,7 @@ const SpecialityMaster = () => {
                 <div className="aria-errormessage">{validationErrors.specialitycode}</div>
             )}
             {validationErrors.specialityname && (
-                <div className="aria-errormessage">{validationErrors.specialitycode}</div>
+                <div className="aria-errormessage">{validationErrors.specialityname}</div>
             )}
             <Card title="Primary Speciality" cardvalue={CardVal}>
                 <form action="#" onSubmit={submitHandler}>
