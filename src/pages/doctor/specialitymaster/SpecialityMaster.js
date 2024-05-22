@@ -24,7 +24,11 @@ const SpecialityMaster = () => {
     const submitHandler = async (operation, e) => {
         e.preventDefault();
         let isValid = true;
-        const validationErrors = {};
+        const validationErrors = {
+          specialityname:'',
+          specialitycode:''
+
+        };
         if (!formData.specialityname) {
             isValid = false;
             validationErrors.specialityname = 'Speciality Name is required';
@@ -37,10 +41,12 @@ const SpecialityMaster = () => {
         if (isValid) {
             try {
                 if(operation === "Update"){
-                    const response = await axios.post(`${process.env.REACT_APP_URLV1}updateDepartmentMaster`, formData);
+                    const response = await axios.post(`${process.env.REACT_APP_URLV1}updateDepartmentMaster`, formData);   
                 }else{
                     const response = await axios.post(`${process.env.REACT_APP_URLV1}saveDepartmentMaster`, formData);
                 }
+                setValidationErrors({});
+                seterror(false);
             } catch (error) {
                 console.log("new error" + error);
             }
@@ -54,6 +60,7 @@ const SpecialityMaster = () => {
     const fetchData = async () => {
         try {
             const response = await axios.post(`${process.env.REACT_APP_URLV1}departmentMaster`, {});
+            // console.log("response.data", response.data)
             setDepartment(response.data.object.departmentList);
         } catch (error) {
             console.log("new error" + error);
@@ -121,10 +128,12 @@ const SpecialityMaster = () => {
 
     // edit function start
     const handleEdit = (record) => {
+      // console.log("handle edir::: called", record);
         setFormData({
             specialityname: record.name,
             specialitycode: record.code,
         });
+        setValidationErrors({});
     };
 
     // edit function end
@@ -173,13 +182,14 @@ const SpecialityMaster = () => {
                 )}
 
             </Card>
+
             <Card title="Sub Speciality" cardvalue={CardVal}>
                 <div className="form-row">
                     <CustomInput value={formData.specialityname} onChange={(e) => setFormData({ ...formData, specialityname: e.target.value })} required={true} label="Speciality Name" />
                 </div>
                 <div className="form-row">
                     <div className="form-row-left">
-                        <CustomInput value={formData.specialityname} onChange={(e) => setFormData({ ...formData, specialityname: e.target.value })} required={true} label="Speciality Name" />
+                        <CustomInput value={formData.specialitycode} onChange={(e) => setFormData({ ...formData, specialitycode: e.target.value })} required={true} label="Speciality Code" />
                     </div>
                     <div className="form-row-right !justify-start">
                         <CustomToggleButton label="Status" onSendData={(toggleState) => setFormData({ ...formData, status: toggleState ? "A" : "I", })} />
